@@ -36,12 +36,13 @@ Suggestion for the Linux system:
    ```shell
    sudo apt-get install tmux conky python3 kazam python3-numpy 
    
-   
    ```
+   
 
-   Some of the tools has to be installed manually.
+Some of the tools has to be installed manually.
 
-   - Sublime
+- - Sublime
+
    - VSCode
    - Chrome
    - Blender
@@ -53,13 +54,12 @@ Suggestion for the Linux system:
    
 
 5. Install scientific software
-
-   - pycharm
-
+- pycharm
    - clion
-   - paraview
+- paraview
    - [openfoam (6, 2006, 1906)](./Install_OpenFoam.md)
    - [code_aster](./Install_code_aster.md)
    - salome
    - ligggths
-
+6.  Right click meum
+   - 
