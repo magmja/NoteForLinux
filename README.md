@@ -5,7 +5,7 @@ Suggestion for the Linux system:
 
 1. Install Linux system (ref: [wikiHow](https://zh.wikihow.com/%E5%AE%89%E8%A3%85Ubuntu-Linux))
 
-   1. Download system image, e.g., [Ubuntu](https://ubuntu.com/)
+   1. Download system image, e.g., [Ubuntu](https://ubuntu.com/), [Linux Mint (19.3)]
    2. Download [Universal USB Installer](https://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/)
    3. Make a USB installer (Disk >3GB)
 
@@ -63,3 +63,8 @@ Some of the tools has to be installed manually.
    - ligggths
 6.  Right click meum
    - 
+
+7. Bashrc file:
+   ```
+   
+   ```

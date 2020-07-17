@@ -4,6 +4,11 @@
 
 ## OpenFoam v2006
 
+- Change to the root user:
+```
+sudo su
+```
+
 - Source the bashrc, eg. if installed under the `~/OpenFOAM` directory
 
 ```
