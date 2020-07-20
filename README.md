@@ -41,8 +41,7 @@ Suggestion for the Linux system:
 
 Some of the tools has to be installed manually.
 
-- - Sublime
-
+   - Sublime
    - VSCode
    - Chrome
    - Blender
@@ -54,17 +53,48 @@ Some of the tools has to be installed manually.
    
 
 5. Install scientific software
-- pycharm
+   - pycharm
    - clion
-- paraview
+   - paraview
    - [openfoam (6, 2006, 1906)](./Install_OpenFoam.md)
    - [code_aster](./Install_code_aster.md)
    - salome
    - ligggths
-6.  Right click meum
-   - 
 
-7. Bashrc file:
+
+1.  Right click meum
+    - For Linux Mint
+      
+      ```
+      vi ~/.local/share/nemo/action/vscode.nemo_action
+      ```
+      Then add the following to the file:
+      ```
+      [Nemo Action]
+      Name=Open in VS Code
+      Comment=Open in VS Code
+      Exec=code %F
+      Icon-Name=com.visualstudio.code
+      Selection=Any
+      Extensions=dir;
+      ```
+
+
+
+2. Bashrc file:
    ```
-   
+   alias of7='source /opt/openfoam7/etc/bashrc'
+   alias of1906='source /opt/openfoam/OpenFOAM-v1906/etc/bashrc'
+   alias of2006='source /opt/openfoam/OpenFOAM-v2006/etc/bashrc'
+   alias of1812='source /opt/openfoam/OpenFOAM-v1812/etc/bashrc'
+   alias of301='source /opt/OpenFOAM/OpenFOAM-3.0.1/etc/bashrc'
+   alias of240='source /opt/OpenFOAM/OpenFOAM-2.4.0/etc/bashrc'
+   alias ofe40='source /opt/foam/foam-extend-4.0/etc/bashrc'
+   alias ofe41='source /opt/foam/foam-extend-4.1/etc/bashrc'
+
+   alias of6='source /opt/openfoam6/etc/bashrc'
+
+   alias aster='source /opt/aster/etc/codeaster/profile.sh'
+   alias aster144='source /opt/aster144/etc/codeaster/profile.sh'
+   alias aqua='source /home/hui/GitCode/Code_Aster/hydromodel/etc/aliases.sh'
    ```

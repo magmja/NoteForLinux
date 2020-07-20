@@ -8,7 +8,7 @@ Ref2: ([A Blog by a Jananese](https://hitoricae.com/2020/05/16/installation-code
 ``` shell
 sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk tcl bison flex liblapack-dev libblas-dev libopenblas-dev libboost-python-dev libboost-numpy-dev zlib1g-dev nedit geany vim ddd
 
-sudo apt-get install checkinstall openmpi-bin libx11-dev grace gettext libboost-all-dev swig
+sudo apt-get install checkinstall openmpi-bin libx11-dev grace gettext libboost-all-dev swig libsuperlu-dev
 ```
 
 2. Download and install OpenBLAS 
@@ -33,11 +33,21 @@ sudo apt-get install checkinstall openmpi-bin libx11-dev grace gettext libboost-
    ```
    Then Install Code_Aster:	
    
-   ``` python3 setup.py install --prefix=/opt/aster144```
+   ``` 
+   python3 setup.py install --prefix=/opt/aster144
+   ```
    
-    After the build complete, to make host file for parallel calculation.
+4. After the build complete, to make host file for parallel calculation. (Write the description to the mpi_hostfile)
    
-   ``` echo "$HOSTNAME cpu=$(cat /proc/cpuinfo | grep processor | wc -l)" > /opt/aster/etc/codeaster/mpi_hostfile```
-   
-4. 
+   ```
+    echo "$HOSTNAME cpu=$(cat /proc/cpuinfo | grep processor | wc -l)" > /opt/aster/etc/codeaster/mpi_hostfile
+    ```
+5.  ScaLAPACK  [offical website](http://www.netlib.org/scalapack/)
+
+   ```
+   tar xfvz scalapack_installer.tgz
+   cd scalapack_installer
+   ./setup.py --lapacklib=/opt/OpenBLAS/lib/libopenblas.a --mpicc=mpicc --mpif90=mpif90 --mpiincdir=/usr/lib/x86_64-linux-gnu/openmpi/include --ldflags_c=-fopenmp --ldflags_fc=-fopenmp --prefix=/opt/scalapack-n
+
+   ```
 
