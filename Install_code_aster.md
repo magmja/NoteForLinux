@@ -53,6 +53,6 @@ sudo apt-get install checkinstall openmpi-bin libx11-dev grace gettext libboost-
 
 ## Install Code_Aster on WSL
 
-1. xxxx
+1. download from....
 
-2. xxx
+2.
