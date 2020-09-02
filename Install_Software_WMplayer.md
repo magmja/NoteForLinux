@@ -8,7 +8,7 @@ Download VMware Workstation Player 15.5.6.
 
 After the file is downloaded, restart your computer and open your from downloads:
     ```
-    WMware-player-15.5.6.exe
+    VMware-player-15.5.6.exe
     ```
 
 Proceed with the guidelines given:
@@ -18,7 +18,7 @@ Proceed with the guidelines given:
 3. Press install and finish.
 
 
-Wmware-player should now be installed.
+Wmware-player installation complete!
 
 
 ## How to install Linux system on Vmware-player(need to enable VT-x from BIOS)
@@ -27,17 +27,37 @@ Wmware-player should now be installed.
 
 From the link, download your preferred linux system. In this case Linux Mint is used. 
 
-1. VMware-setup
+1. VMware - setup
 
 After downloading, open your WMware-player. 
 * Select the `Create a New Virtual Machine` option
 * Select `Custom (advanced)` type configuration
 * Select `I will install the operating system later`
+* Select a Guest operating System :`Linux` and Version `Ubuntu 64-bit`
+* Name your Virtual machine (Linux Mint) and select it`s location
+* Maximize number of processors and storage
+* Create a new virtual disk
+* Store virtual disk as a single file
+* In processors select `Virtualize Intel VT -x/EPT`
+* In `New CD/DVD (SATA)` select `Use ISO image file` and open with your `linuxmint.iso` disk
+* Press `Finish` 
+
+ Your Linux Mint should now be ready, you can test by running it using `Power on this virtual machine` 
+
+ 2. Linux Mint - setup
+
+ * Select `Start Linux Mint` in the startup window
+ * On the desktop press the `Install Linux Mint` disc
+ * Installation type: `Erase disk and install Linux Mint
+
+After some minutes, a window saying installation has finished should pop up. Press `Restart Now` 
+
+Linux Mint installation complete!
 
 
 
 
-## How to install Openfoam in ubuntu
+## How to install OpenFOAM on ubuntu
 
 (ref: [The OpenFOAM Foundation](http:www.openfoam.org))
 
@@ -63,7 +83,14 @@ OpenFOAM can be simply installed for the first time using the `apt` package mana
 
     ```
 
-OpenFOAM 8 and ParaView 5.6.0 are now installed in the /opt directory.
+OpenFOAM 6 and ParaView 5.6.0 are now installed in the /opt directory.
+
+After the installation, add the following to the end of  the file "~/.bashrc":
+```
+alias of6="source /opt/openfoam6/etc/bashrc"
+```
+
+OpenFOAM installation complete!
 
 ## How to install Code_Aster
 
@@ -101,6 +128,13 @@ sudo python3 setup.py install --prefix=/opt/aster144
 ```
 echo "$HOSTNAME cpu=$(cat /proc/cpuinfo | grep processor | wc -l)" > /opt/aster/etc/codeaster/mpi_hostfile
 ```
+add the following to the end of  the file "~/.bashrc"
+
+After the installation, add the following to the end of  the file "~/.bashrc":
+```
+alias aster144="source /opt/aster144/etc/bashrc"
+```
+Code_Aster installation complete!
 
 ## How to install Salome-Meca
 
@@ -121,6 +155,8 @@ To launch Salome-Meca:
 cd appli_V2017.0.2
 ./salome
 ```
+
+Salome-Meca installation complete!
 
 
 
