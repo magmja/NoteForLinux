@@ -20,7 +20,22 @@ Proceed with the guidelines given:
 
 Wmware-player should now be installed.
 
-After that
+
+## How to install Linux system on Vmware-player(need to enable VT-x from BIOS)
+
+(ref: [LINUX.org](https://www.linux.org/pages/download/))
+
+From the link, download your preferred linux system. In this case Linux Mint is used. 
+
+1. VMware-setup
+
+After downloading, open your WMware-player. 
+* Select the `Create a New Virtual Machine` option
+* Select `Custom (advanced)` type configuration
+* Select `I will install the operating system later`
+
+
+
 
 ## How to install Openfoam in ubuntu
 
@@ -34,6 +49,7 @@ OpenFOAM can be simply installed for the first time using the `apt` package mana
 
     ```
     sudo sh -c "wget -O - https://dl.openfoam.org/gpg.key | apt-key add -"
+
     sudo add-apt-repository http://dl.openfoam.org/ubuntu
     ```
 
@@ -43,7 +59,8 @@ OpenFOAM can be simply installed for the first time using the `apt` package mana
     ```
 3. Install OpenFOAM:
     ```
-    sudo apt-get -y install openfoam8
+    sudo apt-get -y install openfoam6
+
     ```
 
 OpenFOAM 8 and ParaView 5.6.0 are now installed in the /opt directory.
