@@ -55,4 +55,6 @@ sudo apt-get install checkinstall openmpi-bin libx11-dev grace gettext libboost-
 
 1. download from....
 
-2.
+2. this is a test
+
+3. new test
