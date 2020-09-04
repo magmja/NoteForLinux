@@ -1,7 +1,8 @@
 # Note for Linux
- A note for the new Linux system
+ A note for the new Linux system.
 
-Suggestion for the Linux system:
+
+## Suggestion for the Linux system:
 
 1. Install Linux system (ref: [wikiHow](https://zh.wikihow.com/%E5%AE%89%E8%A3%85Ubuntu-Linux))
 
@@ -34,12 +35,11 @@ Suggestion for the Linux system:
 4. Install small useful tools
 
    ```shell
-   sudo apt-get install tmux conky python3 kazam python3-numpy 
+   sudo apt-get install tmux conky python3 kazam python3-numpy vim
    
-   ```
-   
+   ```  
 
-Some of the tools has to be installed manually.
+   Some of the tools has to be installed manually.
 
    - Sublime
    - VSCode
@@ -57,11 +57,12 @@ Some of the tools has to be installed manually.
    - clion
    - paraview
    - [openfoam (6, 2006, 1906)](./Install_OpenFoam.md)
-   - [code_aster](./Install_code_aster.md)
+   - [code_aster](./Install_code_aster.md) 
    - salome
    - ligggths
 
 
+## Useful tips 
 1.  Right click meum
     - For Linux Mint
       
