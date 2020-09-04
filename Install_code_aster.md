@@ -14,18 +14,25 @@ Unzip the package
 tar -xvf aster-xxxxx.tar.gz
 ```
 
-### 2.Install prerequiesites
+### 2. Install prerequiesites
 
 ``` shell
 sudo apt-get install gcc g++ gfortran cmake python3 python3-dev python3-numpy tk tcl bison flex liblapack-dev libblas-dev libopenblas-dev libboost-python-dev libboost-numpy-dev zlib1g-dev nedit ddd
 ```
 
-### 3.Install the main program
+### 3. Install the main program
    Then Install Code_Aster:	
    ``` shell
    sudo python3 setup.py install --prefix=/opt/aster144
    ```
+### 4. Great alias command
+ Add the following to the ~/.bashrc, so that you can enter the Code_Aster enviroment and run simulations easily. 
 
+   ``` shell
+   alias aster144='source /opt/aster144/etc/codeaster/profile.sh'
+   ```
+
+**Now, the installation for the series version is finished.**
 
 
 ---
