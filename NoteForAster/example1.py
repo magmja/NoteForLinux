@@ -31,7 +31,7 @@ elemprop = AFFE_CARA_ELEM(CABLE=_F(GROUP_MA=('twines'),
                           MODELE=model)
 
 net = DEFI_MATERIAU(CABLE=_F(EC_SUR_E=0.0001),
-                          ELAS=_F(E=40000000, NU=0.2,RHO=1140.0))  #from H.moe 2016
+                     ELAS=_F(E=40000000, NU=0.2,RHO=1140.0))  #from H.moe 2016
                           # ELAS=_F(E=62500000,NU=0.2,RHO=1140.0))  #from odd m. faltinsen, 2017
                           # ELAS=_F(E=82000000,NU=0.2,RHO=1015.0))  #from H.moe, a. fredheim, 2010
                           # ELAS=_F(E=119366207.319,NU=0.2,RHO=1015.0))#from chun woo lee
