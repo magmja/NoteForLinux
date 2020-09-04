@@ -1,5 +1,8 @@
 # A note for learning Code_Aster
 
+Author: Magnus Aske Mjåtveit
+
+
 (ref: [Documentation15](https://www.code-aster.org/V2/doc/default/en/index.php?man=commande))
 
 
