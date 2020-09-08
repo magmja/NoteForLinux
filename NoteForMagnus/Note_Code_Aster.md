@@ -254,7 +254,9 @@ The dynamic evolution can be studied in several successive work, by a continuati
 * CARA_ELEM: Name of the characteristics elements of hull, beam, pipe, bars, cable, and discrete elements affected on the model `Mo`. Obviously, this keyword is optional: if the model does not contain such elements, it is not useful; on the other hand, if the model contains such elements, it is obligatory.
 * CHAM_MATER: Name of the affected material field on the model `Mo`. Attention, all the principal meshs of the model must be associated with a material (if not fatal error with not very explicit message),
 
-* COMPORTEMENT: behaviour 
+* COMPORTEMENT: It is the type of behavior which determines the type of integration used. For example
+  * DEFORMATION = `G ROT_GDEP`; Allows to treat great rotations and great displacements, but while remaining in small deformations, in a specific way according to modelings
+  * GROUP_MA = `twines`; The meshs specify on which the incremental relation of behaviour is used
 * CONVERGENCE: describes the parameters making it possible to appreciate the convergence of the method of NEWTON used to solve the nonlinear mechanical problem
   * ITER_GLOB_MAXI: Maximum iconvergence criteria
   * RESI_GLOB_RELA: Relative convergence criteria
@@ -266,9 +268,9 @@ The dynamic evolution can be studied in several successive work, by a continuati
   * OBSE_ETAT_INIT: specify if one must observe the fields at the initial moment because the initial moment is not manageable by the list of moments   
 * SCHEMA_TEMPS: description of the diagram of integration in time
   * FORMULATION: resolutions in displacement, speed or acceleration
-  * SCHEMA:
-  * ALPHA: parameter
-* INCREMENT: the list of the moments of calculation defines. 
+  * SCHEMA = `HHT`; HILBER-HUGHES-TAYLOR (HHT), construct a HHT integration object. Implicit method thar allows for energy dissipation and second order accuracy (not possible with regular NEWMARK).
+  * ALPHA: parameter (modified average acceleration)
+* INCREMENT: Defines the time intervals taken in the increamental method.
 
 ---
 ---
